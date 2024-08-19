@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadyMix Concrete Business</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SY Readymix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#quote">Request a Quote</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hover1">Quality Ready-Mix Concrete for Your Projects</h2>
+            <p>Reliable Delivery, Exceptional Quality</p>
+            <a href="#quote" class="cta-btn">Request a Quote</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Our company has been providing high-quality ready-mix concrete for over 20 years. We pride ourselves on delivering the best products and services to our clients.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service" hover>
+                <h3>Residential Concrete</h3>
+                <p>We offer top-notch residential concrete solutions for your home projects.</p>
+            </div>
+            <div class="service">
+                <h3>Commercial Concrete</h3>
+                <p>High-quality concrete for commercial buildings and projects.</p>
+            </div>
+            <div class="service">
+                <h3>Custom Mixes</h3>
+                <p>Custom concrete mixes tailored to your specific needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quote" class="quote">
+        <div class="container">
+            <h2>Request a Quote</h2>
+            <form action="https://formspree.io/f/xwpenoql" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder = "eg: +60193372871" required>
+                
+                <label for="quantity">Quantity Needed:</label>
+                <input type="text" id="quantity" name="quantity" required>
+                
+                <label for="delivery">Delivery Address:</label>
+                <input type="text" id="delivery" name="delivery" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Phone: (+60)19-3372871</p>
+            <p>Email: contact@readymixconcrete.com</p>
+            <p>Address: 123 Concrete Lane, City, State, ZIP</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ReadyMix Concrete Business. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
