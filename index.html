@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReadyMix Concrete Business</title>
+    <title>SY Readymix</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
+    <header> 
+        
         <div class="container">
+            <div class = "header-content">
+            <img src="background.png" alt="Logo" class="logo">
             <h1>SY Readymix</h1>
+        </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#quote">Request a Quote</a></li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
@@ -25,6 +28,7 @@
     </header>
     
     <section id="home" class="hero">
+        
         <div class="hero-content">
             <h2 class="hover1">Quality Ready-Mix Concrete for Your Projects</h2>
             <p>Reliable Delivery, Exceptional Quality</p>
@@ -78,6 +82,27 @@
                 
                 <button type="submit">Submit</button>
             </form>
+            <script>
+                // Check localStorage or sessionStorage when the page loads
+                window.addEventListener('load', function() {
+                    // Optionally clear the form if a specific condition is met
+                    if (localStorage.getItem('formSubmitted')) {
+                        document.getElementById('contact-form').reset();
+                        localStorage.removeItem('formSubmitted');
+                    }
+                });
+            
+                // Add event listener for form submission
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    // Optionally, you can handle the submission with fetch or another method here
+            
+                    // Store a flag in localStorage or sessionStorage to indicate that the form was submitted
+                    localStorage.setItem('formSubmitted', 'true');
+                    
+                    // Allow the form to be submitted to Formspree
+                });
+            </script>
+            
         </div>
     </section>
 
